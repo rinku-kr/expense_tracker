@@ -34,7 +34,5 @@ class Expense {
   final String id;
   final Category category; // Custom type.
 
-  String get formattedDate {
-    return formatter.format(date);
-  }
+  String get formattedDate => formatter.format(date);
 }
