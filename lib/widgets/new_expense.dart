@@ -51,7 +51,11 @@ class _NewExpenseState extends State<NewExpense> {
             const SizedBox(
               width: 10,
             ),
-            TextButton(onPressed: () {}, child: const Text("Cancel")),
+            TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text("Cancel")),
           ],
         )
       ]),
